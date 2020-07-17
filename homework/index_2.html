@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!-- Webpage Title -->
+    <title>나만의원페이지 쇼핑몰</title>
+
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+
+    <!-- 구글폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+
+    <style type="text/css">
+        * {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        .wrap {
+            width: 600px;
+            margin: auto;
+        }
+
+        .img {
+            width: 300px;
+            height: 250px;
+            margin: auto;
+
+
+            border: black solid;
+
+            background-image: url('https://img.khan.co.kr/lady/201509/20150915142140_2_150915_02_sul.jpg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            /*padding-top: 100px; 이미지 사이즈가 정해져서 패딩은 안 먹는다*/
+
+
+        }
+
+        .info {
+            width: 600px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+
+        }
+
+        .info1 {
+            width: 400px;
+
+        }
+
+        h1, h5 {
+            display: inline;
+
+        }
+
+        .order {
+            text-align: center;
+        }
+
+        .orderForm {
+            background: chocolate;
+            margin-top:15px;
+            margin-bottom: 15px;
+            color: white;
+        }
+
+        input {
+            display: inline-block;
+            max-height: 24px;
+            float: right;
+        }
+
+
+
+
+    </style>
+
+    <script>
+        function order() {
+            alert ('주문이 완료되었습니다.'); // 여기에 코드를 작성하세요.
+        }
+
+    </script>
+</head>
+<body>
+<div class="wrap">
+    <div class="img"></div>
+    <div class="info">
+        <h1>선물용 전통주</h1>
+        <h5><span style="color: violet; margin-left: 30px;">가격: 50,000원/1박스</span></h5>
+        <p>더 이상 말이 필요없는 설화주! 정성을 담아 고급 술잔과 전통술병이 함께 들어있어 더더욱
+            운치있는 분위기를 연출합니다. 남녀노소 누구나 즐길 수 있는 고급 대표전통주를 선물하세요</p>
+    </div>
+
+    <div class="info1">
+        <h2>주문하기</h2>
+        <div class="orderForm">
+            <span style="margin-left: 5px;">주문자 성함:</span><input type="text"></div>
+        <div class="orderForm">
+            <span style="margin-left: 5px;">수량:</span><input type="number" min="1"></div>
+        <div class="orderForm">
+            <span style="margin-left: 5px;">주소:</span><input type="text"></div>
+        <div class="orderForm">
+            <span style="margin-left: 5px;">전화번호:</span><input type="tel"></div>
+
+        <div class="order">
+            <button onclick="order()" style="padding-left: 60px; padding-right: 60px;" type="button" class="btn btn-primary">주문하기</button>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

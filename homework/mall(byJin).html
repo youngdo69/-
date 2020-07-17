@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+    <title>week01 과제: 쇼핑몰</title>
+
+    <style>
+        body{
+            background-color:#f0f0f0;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .wrap{
+            width: 500px;
+            margin: 0 auto;
+        }
+        h1{
+            text-align: center;
+            padding: 50px 0 20px;
+            font-size: 1.25rem;
+        }
+        .inner-space{
+        }
+        .img-thumb img{
+            width: 100px;
+            opacity: 0.6;
+            border-radius:5px;
+            transition: all .5s;
+            border: solid 2px rgba(0,0,0,0);
+        }
+        .img-thumb img:first-child{
+            opacity: 1;
+            border: solid 2px #007bff !important;
+        }
+        .img-thumb img:hover{
+            border-color: rgba(0,0,0,0.2);
+        }
+        small{ font-size:0.875rem; }
+    </style>
+</head>
+
+<body>
+
+<h1>PEANUTS SELECT SHOP</h1>
+
+<div class="wrap">
+    <div class="card mb-3 inner-space">
+        <img class="card-img-top" src="http://thumbnail.10x10.co.kr/webimage/image/basic600/259/B002597804-3.jpg"
+             alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">스누피 컵 <small class="text-muted">가격: 1,000,000원 / 개</small></h5>
+            <p class="card-text">실패투성이 소년 찰리브라운과 최고의 친구 스누피! 그리고 천진난만한 장난꾸러기들이 전하는 유쾌한 웃음과 따뜻한 격려는 많은 이들에게 행복을
+                전해주었습니다.</p>
+            <p class="card-text img-thumb">
+                <img src="http://webimage.10x10.co.kr/ckeditor/item/202002/20200214_151858_4196.jpg" alt="">
+                <img src="http://webimage.10x10.co.kr/ckeditor/item/202002/20200214_151932_7905.jpg" alt="">
+                <img src="http://webimage.10x10.co.kr/ckeditor/item/202002/20200214_152002_5702.jpg" alt="">
+            </p>
+
+        <div class="form">
+            <div class="form-group">
+                <label for="exampleFormControlInput1">주문자 이름</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="이름을 작성해주세요.">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">수량</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">주소</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="주소를 입력해주세요.">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">전화번호</label>
+                <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="전화번호를 입력해주세요.">
+            </div>
+        </div>
+
+
+            </div>
+        <button onclick="order()" type="button" class="btn btn-primary btn-lg">주문하기</button>
+    </div>
+
+</div>
+
+<script>
+    function order(){
+        alert('주문이 완료되었습니다.');
+    }
+    //프레임워크
+
+</script>
+
+</body>
+
+</html>
