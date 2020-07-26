@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>가위바위보맞추가</title>
+
+        <script>
+           document.write("<h1>컴퓨터 가위,바위,보 맞추기</h1>");
+
+           let game = prompt("가위,바위,보 중 선택하세요~", "가위");
+           var com = Math.ceil(Math.random()*3);
+           var gameNum;
+           switch (game) {
+               case "가위":
+                   gameNum = 1;
+                   break;
+               case "바위":
+                   gameNum = 2;
+                   break;
+               case "보" :
+                   gameNum = 3;
+                   break;
+
+               default:
+                   alert('잘못 작성했습니다.');
+                   location.reload();
+           }
+
+
+           if(gameNum == com){
+               document.write("오우! 맞췄어요~ 대단해요!");
+
+           }else {
+               document.write("아쉽지만, 틀렷네요. 다시한번 해봐요!", '<br>');
+               switch(gameNum) {
+               case 1:
+                   document.write("제가 생각했던 것은 가위 였습니다.");
+                   break;
+               case 2:
+                   document.write("제가 생각했던 것은 바위 였습니다.");
+                   break;
+               case 3 :
+                   documen.write("제가 생각했던 것은 보 였습니다.");
+                   break;
+               }
+
+           }
+
+
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

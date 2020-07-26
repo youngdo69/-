@@ -6,5 +6,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="homework" />
     <orderEntry type="module" module-name="homework" />
+    <orderEntry type="module" module-name="week02" />
   </component>
 </module>
